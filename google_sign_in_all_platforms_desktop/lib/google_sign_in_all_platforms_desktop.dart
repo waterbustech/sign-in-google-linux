@@ -62,7 +62,7 @@ class GoogleSignInAllPlatformsDesktop
     if (code == null) return;
     final res = await http.post(
       Uri.https('service.waterbus.tech', 'busapi/v1/auth/token'),
-      headers: {'api_key': 'waterbus@2024'},
+      headers: {'api-key': 'waterbus@2024'},
       body: {
         'clientId': params.clientId,
         'code': code,
